@@ -16,7 +16,7 @@ struct TUNewsModel: Decodable {
 
 class ViewControllerVM {
     // 原始的新聞資料
-    @Published var newsList: [TUNewsModel] = []
+    private var newsList: [TUNewsModel] = []
 
     // 搜尋相關
     @Published var searchText: String = ""
